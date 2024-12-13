@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PilotPortfolioFX - Investment Insights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stocks.html">Stocks</a></li>
+                <li><a href="crypto.html">Cryptocurrencies</a></li>
+                <li><a href="real-estate.html">Real Estate</a></li>
+                <li><a href="forex.html">Forex</a></li>
+                <li><a href="top20.html">Reliable Websites</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Content for each specific page (stocks.html, crypto.html, etc.) goes here -->
+
+        <section>
+            <h1>Welcome! Looking For How To - Invest Smart, Invest Right</h1>
+            <p>Your trusted partner in navigating the world of investments, from stocks to cryptocurrencies, real estate, and forex.</p>
+
+            <!-- Search Feature -->
+            <form action="search_results.html" method="get">
+                <input type="text" id="search-input" name="q" placeholder="Search for articles and insights..." required>
+                <button type="submit">Search</button>
+            </form>
+
+            <!-- Informative content about the specific investment type (stocks, crypto, etc.) -->
+        </section>
+
+        <section>
+            <h3>Why Us?</h3>
+            <p> We provide expert guidance, personalized strategies, and a user-friendly platform to help you succeed in your investments. Start your journey with us today and unlock your financial potential!</p>
+
+            <a href="https://pilotportfoliofx.com/user/register" class="cta-button">Sign Up Now</a>
+            <a href="brokercheck-finra-org.html" class="cta-button" > BrokerCheck </a>
+        </section>
+    </main>
+
+    
+
+    <footer>
+        <p>&copy; <span id="year"></span> PilotPortfolioFX. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+<!-- Cookie Consent Banner -->
+<div id="cookie-consent" class="cookie-consent-banner">
+    <p>This website uses cookies to ensure you get the best experience. <button id="accept-cookie">Accept</button></p>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Show the cookie consent banner if not accepted
+      if (!localStorage.getItem('cookieAccepted')) {
+        document.getElementById('cookie-consent').style.display = 'block';
+      }
+
+      // Handle accepting the cookies
+      document.getElementById('accept-cookie').addEventListener('click', () => {
+        localStorage.setItem('cookieAccepted', 'true');
+        document.getElementById('cookie-consent').style.display = 'none';
+      });
+    });
+    </script>
+
+</body>
+</html>

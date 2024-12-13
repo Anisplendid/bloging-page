@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PilotPortfolioFX - Investment Insights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stocks.html">Stocks</a></li>
+                <li><a href="crypto.html">Cryptocurrencies</a></li>
+                <li><a href="real-estate.html">Real Estate</a></li>
+                <li><a href="forex.html">Forex</a></li>
+                <li><a href="top20.html">Reliable Websites</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section>
+        <h1>Forex Trading: A Global Opportunity</h1>
+        <p>Forex trading is one of the largest and most liquid financial markets in the world. At PilotPortfolioFX, we provide you with the tools and insights to navigate the fast-paced world of forex and make profitable trades.</p>
+
+        <h2>What is Forex?</h2>
+        <p>Forex, or the foreign exchange market, involves the trading of currencies. Unlike the stock market, forex trading operates 24/7, allowing you to trade whenever it suits you. The goal is to profit from the fluctuations in currency values.</p>
+
+        <h3>Why Trade Forex?</h3>
+        <ul>
+            <li><strong>High Liquidity:</strong> The forex market is the most liquid market in the world, making it easy to enter and exit trades quickly.</li>
+            <li><strong>24/7 Market:</strong> Forex operates around the clock, allowing you to trade at your convenience.</li>
+            <li><strong>Leverage:</strong> Forex brokers offer leverage, allowing you to control larger positions with a smaller amount of capital.</li>
+        </ul>
+
+        <h3>Why Choose PilotPortfolioFX for Forex Trading?</h3>
+        <p>At PilotPortfolioFX, we provide real-time data, advanced charting tools, and educational resources to help you become a successful forex trader. Our platform is designed for both beginners and experienced traders.</p>
+
+        <h3>Start Trading Forex Today!</h3>
+        <p>Take your forex trading to the next level with PilotPortfolioFX. Our platform is designed to give you all the tools you need to succeed in the world’s largest financial market.</p>
+
+        <a href="https://pilotportfoliofx.com/user/register" class="cta-button">Sign Up Now</a>
+    </section>
+</main>
+
+<main>
+    <section>
+      <h2>Success Stories</h2>
+      <p><strong>James T., Sydney:</strong> "Trading forex with PilotPortfolioFX has been a game-changer. With their in-depth analysis and expert strategies, I've been able to grow my account consistently." </p>
+      <p><strong>Linda W., London:</strong> "I’ve been trading forex for years, but PilotPortfolioFX provided me with new insights and strategies that greatly improved my success rate. Their professional team is always available to help." </p>
+      <p><strong>David R., London:</strong> "I started trading Forex with PilotPortfolioFX, and my portfolio grew by 50% in just a few months. Their insights were spot-on." </p>
+      <p><strong>Michael A., Tokyo:</strong> "Thanks to the trading tools from PilotPortfolioFX, I was able to master Forex trading. Now, I'm confidently managing my investments." </p>
+    </section>
+</main>
+
+<main>
+    <section>
+        <h3>Forex Profit Calculator</h3>
+        <form id="forex-form">
+            <label for="currency-amount">Amount to Trade ($):</label>
+            <input type="number" id="currency-amount" name="currency-amount" required>
+            <label for="exchange-rate">Current Exchange Rate:</label>
+            <input type="number" id="exchange-rate" name="exchange-rate" required>
+            <label for="leverage">Leverage Factor:</label>
+            <input type="number" id="leverage" name="leverage" required>
+            <button type="button" onclick="calculateForexProfit()">Calculate</button>
+        </form>
+        <div id="forex-result"></div>
+        <script>
+            function calculateForexProfit() {
+                var amount = parseFloat(document.getElementById('currency-amount').value);
+                var rate = parseFloat(document.getElementById('exchange-rate').value);
+                var leverage = parseFloat(document.getElementById('leverage').value);
+                var profit = amount * rate * leverage;
+                document.getElementById('forex-result').innerHTML = "Potential Profit: $" + profit.toFixed(2);
+            }
+        </script>
+    </section>
+  
+    <section>
+      <h2>Forex Market Trends</h2>
+      <canvas id="forex-chart" width="400" height="200"></canvas>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script>
+        var ctx = document.getElementById('forex-chart').getContext('2d');
+        var myChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ['January', 'February', 'March', 'April', 'May'],
+            datasets: [{
+              label: 'EUR/USD Performance',
+              data: [1.15, 1.18, 1.17, 1.20, 1.22],
+              borderColor: 'rgba(75, 192, 192, 1)',
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      </script>
+    </section>
+    
+  
+    <section>
+      <h2>Why Choose PilotPortfolioFX for Forex Trading?</h2>
+      <p><strong>Expert Market Analysis:</strong> Our forex experts provide in-depth analysis to help you navigate currency pairs and trends.</p>
+      <p><strong>Advanced Tools:</strong> We offer cutting-edge tools and resources to improve your forex trading experience and success rate.</p>
+      <p><strong>Risk Management Strategies:</strong> We help you manage risk effectively, ensuring your investments are protected.</p>
+      <p><strong>24/7 Support:</strong> Our forex team is available around the clock to provide the assistance and support you need to succeed.</p>
+    </section>
+  
+    <section>
+      <h3>Start Your Forex Trading Journey with PilotPortfolioFX</h3>
+      <p>Forex trading offers countless opportunities for profit. Let us guide you through the process with professional strategies and tools designed for success.</p>
+      <a href="https://pilotportfoliofx.com/user/register" class="cta-button">Sign Up Now</a>
+    </section>
+  
+    <section>
+      <h2>Search for Articles and Insights</h2>
+      <form action="search.html" method="get">
+        <input type="text" id="search-input" name="q" placeholder="Search for forex articles, insights..." required>
+        <button type="submit">Search</button>
+      </form>
+    </section>
+  </main>
+
+
+<footer>
+    <p>&copy; <span id="year"></span> PilotPortfolioFX. All Rights Reserved.</p>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>

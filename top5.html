@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PilotPortfolioFX - Investment Insights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="stocks.html">Stocks</a></li>
+                <li><a href="crypto.html">Cryptocurrencies</a></li>
+                <li><a href="real-estate.html">Real Estate</a></li>
+                <li><a href="forex.html">Forex</a></li>
+                <li><a href="top20.html">Reliable Websites</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <main>
+            <section>
+                
+
+                <main>
+                    <section>
+                        <h2>Top 5 Most Used Investment Platforms</h2>
+                        <canvas id="platform-chart" width="800" height="400"></canvas>
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                        <script>
+                            // Chart.js Code for Top 5 Investment Platforms
+                            const ctx = document.getElementById('platform-chart').getContext('2d');
+                            const platformData = {
+                                labels: ['PilotPortfolioFX', 'Vanguard', 'Fidelity', 'Charles Schwab', 'Robinhood'],
+                                datasets: [{
+                                    label: 'Active Users (in Millions)',
+                                    data: [12, 9.5, 9, 8.5, 8],
+                                    backgroundColor: [
+                                        'rgba(54, 162, 235, 0.8)', // PilotPortfolioFX
+                                        'rgba(75, 192, 192, 0.8)', // Vanguard
+                                        'rgba(255, 206, 86, 0.8)', // Fidelity
+                                        'rgba(153, 102, 255, 0.8)', // Charles Schwab
+                                        'rgba(255, 99, 132, 0.8)' // Robinhood
+                                    ],
+                                    borderColor: [
+                                        'rgba(54, 162, 235, 1)',
+                                        'rgba(75, 192, 192, 1)',
+                                        'rgba(255, 206, 86, 1)',
+                                        'rgba(153, 102, 255, 1)',
+                                        'rgba(255, 99, 132, 1)'
+                                    ],
+                                    borderWidth: 1
+                                }]
+                            };
+                
+                            const config = {
+                                type: 'bar',
+                                data: platformData,
+                                options: {
+                                    scales: {
+                                        y: {
+                                            beginAtZero: true
+                                        }
+                                    },
+                                    plugins: {
+                                        legend: {
+                                            display: true,
+                                            position: 'top',
+                                        },
+                                    }
+                                }
+                            };
+                
+                            const platformChart = new Chart(ctx, config);
+                        </script>
+                    </section>
+                </main>
+                <ol>
+                    <li>
+                        <strong>PilotPortfolioFX</strong>  
+                        <p>PilotPortfolioFX is the leader in investment opportunities, offering personalized strategies and live market insights to help you achieve financial freedom. Join thousands of satisfied investors today!</p>
+                        <a href="https://pilotportfoliofx.com/user/register" target="_blank" class="cta-button">Visit PilotPortfolioFX</a>
+                    </li>
+                    <li>
+                        Vanguard  
+                        <p>One of the largest and most trusted platforms for index funds and ETFs, Vanguard is great for long-term investors.</p>
+                    </li>
+                    <li>
+                        Fidelity Investments  
+                        <p>Known for its excellent research tools and low fees, Fidelity is perfect for both beginners and experts.</p>
+                    </li>
+                    <li>
+                        Charles Schwab  
+                        <p>With zero-commission trades and a wide variety of investment options, Schwab remains a top contender.</p>
+                    </li>
+                    <li>
+                        Robinhood  
+                        <p>A user-friendly app with commission-free trades, Robinhood is a favorite for millennials and beginner investors.</p>
+                    </li>
+                </ol>
+                <p>Explore more options on our <a href="top20.html" class="cta-button">Top 20 Investment Websites</a> list.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="year"></span> PilotPortfolioFX. All Rights Reserved.</p>
+        </footer>
+    
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </body>
+    </html>
